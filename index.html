@@ -19,27 +19,45 @@
     
     <section id="about">
         <h1>À propos de moi</h1>
-        <p>Présentez-vous ici.</p>
+        <p>Présentation ...</p>
     </section>
     
     <section id="projects">
         <h1>Mes Projets</h1>
-        <div class="project">
-            <h2>Projet 1</h2>
-            <p>Description du projet 1.</p>
-            <a href="lien_vers_le_projet1">Voir le projet</a>
+        <div class="project-carousel">
+            <div class="project">
+                <h2>Projet 1</h2>
+                <p>Description du projet 1.</p>
+                <a href="lien_vers_le_projet1">Voir le projet</a>
+            </div>
+            <div class="project">
+                <h2>Projet 2</h2>
+                <p>Description du projet 2.</p>
+                <a href="lien_vers_le_projet2">Voir le projet</a>
+            </div>
+            <!-- Ajoutez d'autres projets ici -->
         </div>
-        <div class="project">
-            <h2>Projet 2</h2>
-            <p>Description du projet 2.</p>
-            <a href="lien_vers_le_projet2">Voir le projet</a>
-        </div>
-        <!-- Ajoutez d'autres projets ici -->
+        <button id="prev-project">Précédent</button>
+        <button id="next-project">Suivant</button>
     </section>
     
     <section id="contact">
         <h1>Contactez-moi</h1>
-        <p>Contactez-moi à mounir.gaoui@outlook.com</p>
+        <form id="contact-form">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
     
     <footer>
