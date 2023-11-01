@@ -1,8 +1,12 @@
+import React from "react";
+
 const RenderHeader = () => {
   return (
     <>
-      <p>A propos</p>
-      <p>Mes projets</p>
+      <div className="enTete">
+        <p>A propos</p>
+        <p>Mes projets</p>
+      </div>
     </>
   );
 };
