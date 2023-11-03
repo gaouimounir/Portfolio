@@ -3,7 +3,12 @@ import "../styles/projets.css";
 
 function Projects() {
   const [projects] = useState([
-    { id: 1, title: "Ducksman", description: "Site eCommerce" },
+    {
+      id: 1,
+      title: "Ducksman",
+      description: "Site eCommerce",
+      image: "../images/ducsmanImage.PNG",
+    },
     { id: 2, title: "Twiplon", description: "Réseau social" },
     {
       id: 3,
@@ -14,12 +19,13 @@ function Projects() {
 
   return (
     <div className="projets">
-      <h1>Liste des projets</h1>
+      <h1>Mes projets</h1>
       <ul>
         {projects.map((project) => (
           <li key={project.id}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
+            <img src={project.image} alt={project.title} />
           </li>
         ))}
       </ul>
