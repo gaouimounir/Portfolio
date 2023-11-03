@@ -3,8 +3,13 @@ import "../styles/projets.css";
 
 function Projects() {
   const [projects] = useState([
-    { id: 1, title: "Projet 1", description: "Description du projet 1" },
-    { id: 2, title: "Projet 2", description: "Description du projet 2" },
+    { id: 1, title: "Ducksman", description: "Site eCommerce" },
+    { id: 2, title: "Twiplon", description: "Réseau social" },
+    {
+      id: 3,
+      title: "FridgeMate",
+      description: "Application mobile Anti-gaspi",
+    },
   ]);
 
   return (
