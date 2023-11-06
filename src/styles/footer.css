@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: lightslategray;
     color: white;
     height: 50px;
     position: fixed;
@@ -11,4 +11,16 @@
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    font-size: 150%;
 }
