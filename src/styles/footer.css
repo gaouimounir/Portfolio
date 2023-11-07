@@ -2,18 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     background-color: lightslategray;
     color: white;
-    height: 50px;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-    position: fixed;
     z-index: 1;
+}
 
+.footer a{
+    color: white;
+    text-decoration: none;
 }
 
 .contact{
@@ -21,6 +22,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 25%;
     font-size: 150%;
 }

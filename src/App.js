@@ -1,5 +1,5 @@
 import "./App.css";
-import Projects from "./components/Projets";
+import Welcome from "./components/Welcome";
 import RenderFooter from "./components/footer";
 import RenderHeader from "./components/header";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <RenderHeader />
-      <Projects />
+      <Welcome />
       <RenderFooter />
     </>
   );
