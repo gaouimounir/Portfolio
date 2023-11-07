@@ -1,13 +1,11 @@
 import React from "react";
-import Projects from "./Projets";
 import "../styles/welcome.css";
 
 function Welcome() {
   return (
-    <div>
+    <div className="welcome">
       <h1>Welcome</h1>
       <h2>My Projects</h2>
-      <Projects />
     </div>
   );
 }
