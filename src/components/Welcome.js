@@ -4,8 +4,10 @@ import "../styles/welcome.css";
 function Welcome() {
   return (
     <div className="welcome">
-      <h1>Welcome</h1>
-      <h2>My Projects</h2>
+      <p>Welcome</p>
+      <p>to my portfolio</p>
+      <p>My name is Gaoui Mounir</p>
+      <p>I'm a software developer</p>
     </div>
   );
 }
