@@ -5,8 +5,8 @@ const RenderHeader = () => {
   return (
     <>
       <div className="enTete">
-        <p>A propos</p>
-        <p>Mes projets</p>
+        <p>About Me</p>
+        <p>My Projects</p>
       </div>
     </>
   );
