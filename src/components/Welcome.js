@@ -7,18 +7,31 @@ function Welcome() {
   useEffect(() => {
     const originalText = "Hi, I'm Mounir Gaoui";
     let index = 0;
+    let intervalId;
 
-    const intervalId = setInterval(() => {
-      if (index <= originalText.length) {
-        setDisplayedText(originalText.substring(0, index));
-        index++;
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 100); // ajustez la durée ici
+    const startLoop = () => {
+      intervalId = setInterval(() => {
+        if (index <= originalText.length) {
+          setDisplayedText(originalText.substring(0, index));
+          index++;
+        } else {
+          clearInterval(intervalId);
+          setTimeout(() => {
+            setDisplayedText("");
+            index = 0;
+            startLoop();
+          }, 1000);
+        }
+      }, 100);
+    };
 
-    return () => clearInterval(intervalId);
-  }, []); // le tableau vide [] assure que useEffect s'exécute une seule fois après le montage du composant
+    startLoop();
+
+    // Nettoie l'intervalle lors du démontage du composant
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
   return (
     <div className="welcome">
