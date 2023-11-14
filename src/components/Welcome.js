@@ -41,11 +41,19 @@ function Welcome() {
 
   // Rendu du composant avec le texte en cours de défilement
   return (
-    <div className="welcome">
-      <div className="text">
-        <h1>{displayedText}</h1>
+    <>
+      <div className="welcome">
+        <div className="text">
+          <h1>{displayedText}</h1>
+        </div>
+        <div className="text2">
+          <p>A Front-end Developer based in France and I love coding</p>
+          <p>
+            and learning new things in my free time and open source projects
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
