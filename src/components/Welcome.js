@@ -7,7 +7,8 @@ function Welcome() {
 
   useEffect(() => {
     // Texte original à dérouler
-    const originalText = "Hi, I'm Mounir Gaoui";
+    const originalText =
+      "Hi, I'm Mounir Gaoui. I'm a fullstack developer. I'm passionate about coding. I'm always looking for new challenges. ";
     let index = 0;
     let intervalId; // Variable pour stocker l'ID de l'intervalle
 
@@ -46,12 +47,7 @@ function Welcome() {
         <div className="text">
           <h1>{displayedText}</h1>
         </div>
-        <div className="text2">
-          <p>A Front-end Developer based in France and I love coding</p>
-          <p>
-            and learning new things in my free time and open source projects
-          </p>
-        </div>
+        <div className="text2"></div>
       </div>
     </>
   );
