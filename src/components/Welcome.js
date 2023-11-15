@@ -46,7 +46,6 @@ function Welcome() {
         <div className="text">
           <h1>{displayedText}</h1>
         </div>
-        <div className="text2"></div>
       </div>
     </>
   );

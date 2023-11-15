@@ -16,7 +16,13 @@
 
 .text{
     color: white;
-    margin-top: 520px;
+    margin-top: 75vh;
     background-color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     width: 100%;
+    height: 100%;
+    
+
 }
