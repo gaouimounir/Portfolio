@@ -16,16 +16,6 @@
 
 .text{
     color: white;
-    margin-top: 50px;
-}
-
-.text h1 {
-    margin: 0; /* Ajuste la marge du titre */
-  }
-
-
-.text2{
-    color: white;
     margin-top: 520px;
     background-color: black;
     width: 100%;

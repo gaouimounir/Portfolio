@@ -7,8 +7,7 @@ function Welcome() {
 
   useEffect(() => {
     // Texte original à dérouler
-    const originalText =
-      "Hi, I'm Mounir Gaoui. I'm a fullstack developer. I'm passionate about coding. I'm always looking for new challenges. ";
+    const originalText = "Hi, I'm Mounir Gaoui";
     let index = 0;
     let intervalId; // Variable pour stocker l'ID de l'intervalle
 
