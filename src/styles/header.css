@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(31, 108, 185);
+    opacity: calc(0.8);
     color: white;
     height: 50px;
     position: fixed;
