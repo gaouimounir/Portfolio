@@ -44,7 +44,7 @@ function Welcome() {
     <>
       <div className="welcome">
         <div className="text">
-          <h1>{displayedText}</h1>
+          <p>{displayedText}</p>
         </div>
       </div>
     </>
