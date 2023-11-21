@@ -13,9 +13,9 @@
 
 .text{
     color: rgb(15, 73, 180);
-    margin-top: 60px;
+    padding-top: 60px;
     font-size: 40px;
-    width: 80%;
+    width: 100%;
 }
 .text p{
     width: 100%;
