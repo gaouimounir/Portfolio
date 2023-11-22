@@ -48,8 +48,8 @@ function App() {
   return (
     <>
       <RenderHeader />
-      <RouterProvider router={router} />
       <Welcome />
+      <RouterProvider router={router} />
       <RenderFooter />
     </>
   );
