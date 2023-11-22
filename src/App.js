@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import Welcome from "./components/Welcome";
 import Projects from "./components/Projets";
 import RenderFooter from "./components/footer";
@@ -14,7 +15,10 @@ function Root() {
   return (
     <>
       <header>
-        <nav></nav>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+        </nav>
       </header>
       <div>
         <Outlet />
