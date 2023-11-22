@@ -2,8 +2,6 @@ import "./App.css";
 import React from "react";
 import Welcome from "./components/Welcome";
 import Projects from "./components/Projets";
-import RenderFooter from "./components/footer";
-import RenderHeader from "./components/header";
 import {
   NavLink,
   Outlet,
@@ -62,10 +60,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RenderHeader />
       <Welcome />
       <RouterProvider router={router} />
-      <RenderFooter />
     </>
   );
 }
