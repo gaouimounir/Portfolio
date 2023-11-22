@@ -14,7 +14,7 @@ import {
 function Root() {
   return (
     <>
-      <header>
+      <header className="enTete">
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/projects">Projects</NavLink>
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: ":category",
+        path: ":project",
         element: <Projects />,
       },
     ],
