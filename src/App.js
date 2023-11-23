@@ -14,7 +14,7 @@ function Root() {
     <>
       <header className="enTete">
         <nav>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">About me </NavLink>
           <NavLink to="/projects">Projects</NavLink>
         </nav>
       </header>

@@ -14,6 +14,17 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
+.enTete nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+.enTete nav a{
+  color: white;
+  text-decoration: none;
+}
 
 /* Footer */
 .footer{
