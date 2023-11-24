@@ -21,7 +21,7 @@ function Root() {
       <div>
         <Outlet />
       </div>
-      <div className="footer">
+      <footer className="footer">
         <p>&copy; 2023 Gaoui Mounir</p>
         <div className="contact">
           <a href="https://www.linkedin.com/in/am-gaoui/">
@@ -35,7 +35,7 @@ function Root() {
           </a>
         </div>
         <p>Tous droits réservés</p>
-      </div>
+      </footer>
     </>
   );
 }
@@ -46,21 +46,24 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Root />
+        <Welcome />
       </div>
     ),
-    children: [
-      {
-        path: ":project",
-        element: <Projects />,
-      },
-    ],
+  },
+  {
+    path: "/projects",
+    element: (
+      <div>
+        <Root />
+        <Projects />
+      </div>
+    ),
   },
 ]);
 
 function App() {
   return (
     <>
-      <Welcome />
       <RouterProvider router={router} />
     </>
   );

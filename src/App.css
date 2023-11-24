@@ -24,6 +24,7 @@
 .enTete nav a{
   color: white;
   text-decoration: none;
+  font-size: 150%;
 }
 
 /* Footer */
