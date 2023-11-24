@@ -20,19 +20,21 @@ function Projects() {
   return (
     <div className="projets">
       <h1>Mes projets</h1>
-      <ul>
+      <div className="card-container">
         {projects.map((project) => (
-          <li key={project.id}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+          <div className="card" key={project.id}>
             <img
               src={project.image}
               alt={project.title}
-              style={{ width: "100%" }}
+              className="card-img-top"
             />
-          </li>
+            <div className="card-body">
+              <h5 className="card-title">{project.title}</h5>
+              <p className="card-text">{project.description}</p>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
